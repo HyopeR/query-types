@@ -26,7 +26,7 @@ function isArray(val) {
 }
 
 function parseValue(val) {
-  if (typeof val === 'undefined' || val === '') {
+  if (typeof val === 'undefined') {
     return null;
   } else if (isBoolean(val)) {
     return parseBoolean(val);
